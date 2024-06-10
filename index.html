@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="h1">Cricket Game</div>
+        <div class="button">
+
+
+            <button class="butt" onclick="
+            let randomNumber=Math.random()*3;
+            let computerChoice;
+            let yourChoice='You choose Ball,';
+            //if randomNumber is between 0-1 then computer will choose bat..
+            if(randomNumber>0 && randomNumber<=1)
+            {
+               computerChoice='Bat';
+            }
+            else if(randomNumber>1 && randomNumber <=2)
+            {
+                computerChoice='Ball';
+            }
+            else{
+                computerChoice='Stump';
+            }
+    
+        let resultMsg;
+            if (computerChoice==='Bat') {
+                resultMsg=` Cmputer won the match`;
+            }
+            else if (computerChoice==='Ball') {
+                resultMsg=`It's tie.`;
+            }
+            else{
+              resultMsg=' You won the match.';
+            }
+
+            // alert(yourChoice+' Computer choose '+computerChoice+','+resultMsg);
+            let result=yourChoice+' Computer choose '+computerChoice+', '+resultMsg;
+            document.querySelector(`#result`).value=result;
+            ">Bat</button>
+
+
+            <button class="butt"onclick="
+            let randomNumber=Math.random()*3;
+            let computerChoice;
+            let yourChoice='You choose Stump,';
+            //if randomNumber is between 0-1 then computer will choose bat..
+            if(randomNumber>0 && randomNumber<=1)
+            {
+               computerChoice='Bat';
+            }
+            else if(randomNumber>1 && randomNumber <=2)
+            {
+                computerChoice='Ball';
+            }
+            else{
+                computerChoice='Stump';
+            }
+    
+        let  resultMsg;
+            if (computerChoice==='Stump') {
+                resultMsg=` it's tie`;
+            }
+            else if (computerChoice==='Ball') {
+                resultMsg=`Computer won the Match.`;
+            }
+            else{
+              resultMsg=' You won the match.';
+            }
+
+            // alert(yourChoice+' Computer choose '+computerChoice+','+resultMsg);
+            let result=yourChoice+' Computer choose '+computerChoice+', '+resultMsg;
+            document.querySelector(`#result`).value=result;
+            ">Stump</button>
+
+
+<button class="butt"onclick="
+let randomNumber=Math.random()*3;
+let computerChoice;
+let yourChoice='You choose Ball,';
+//if randomNumber is between 0-1 then computer will choose bat..
+if(randomNumber>0 && randomNumber<=1)
+{
+   computerChoice='Bat';
+}
+else if(randomNumber>1 && randomNumber <=2)
+{
+    computerChoice='Ball';
+}
+else{
+    computerChoice='Stump';
+}
+
+let  resultMsg;
+if (computerChoice==='Stump') {
+    resultMsg=` You won the Match`;
+}
+else if (computerChoice==='Ball') {
+    resultMsg=`It's tie.`;
+}
+else{
+  resultMsg=' Computer won the match.';
+}
+
+// alert(yourChoice+' Computer choose '+computerChoice+','+resultMsg);
+let result=yourChoice+' Computer choose '+computerChoice+', '+resultMsg;
+document.querySelector(`#result`).value=result;
+">Ball</button>
+
+
+
+        </div>
+        <div class="display">
+         <input type="text" id="result" readonly>
+        </div>
+    </div>
+    <script>
+          result=yourChoice+' Computer choose '+computerChoice+', '+resultMsg;
+         document.querySelector(`.result`).value=result;
+    </script>
+</body>
+
+</html>
